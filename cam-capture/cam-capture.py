@@ -1,11 +1,9 @@
 import cv2
 import time
-import os
 
 cam = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 i = 0
 b = 10
-path = 'A:\1.PROJECT\PKM\estrunaut\cam-capture\result'
 
 while (cam.isOpened()):
     ret, frame = cam.read()
