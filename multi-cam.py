@@ -1,7 +1,7 @@
 import cv2
 
-cam1 = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-cam2 = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+cam1 = cv2.VideoCapture('rtsp://admin:dslab2022@192.168.1.17:554/play1.sdp')
+cam2 = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 cam3 = cv2.VideoCapture(2, cv2.CAP_DSHOW)
 
 
