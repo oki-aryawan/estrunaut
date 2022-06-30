@@ -1,8 +1,8 @@
 import cv2
 
-cam = cv2.VideoCapture('http://192.168.0.1:544/video?x.mjpeg')
+cam = cv2.VideoCapture('rtsp://admin:dslab2022@192.168.1.17:554/play1.sdp')
 
-# rtsp://<user>:<pass>@<cameraip>:<port>/play1.sdp  rtsp://admin:dslab@192.168.0.1/H264?ch=1&subtype=0 http://192.168.0.1:80/video?x.mjpeg
+# rtsp://admin:dslab2022@192.168.1.17:554/play1.sdp  rtsp://admin:dslab@192.168.0.1/H264?ch=1&subtype=0 http://192.168.0.1:80/video?x.mjpeg
 
 while(True):
     ret, frame = cam.read()
